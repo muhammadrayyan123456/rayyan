@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            padding: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4c66af;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5d14e4;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.5;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+                <!-- Menu Registrasi -->
+
+                <h2>From Registrasi</h2>
+
+                <form action="sumbit_registration.php" method="post" enctype="multipart/form-data"></form>
+                <table border="1">
+                    <tr>
+                        <td>Nama depan </td>
+                        <td><input type="text" name="nama_depan" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Nama Belakang</td>
+                        <td><input type="text" name="nama_belakang" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Alamat</td>
+                        <td><input type="text" name="alamat" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td><input type="date" name="tanggal_lahir" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <select name="jenis_kelamin" required>
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" name="username" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Upload foto</td>
+                        <td><input type="file" name="foto" accept="image/*" required></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Daftar">
+                        </td>
+                    </tr>
+                </table>
+        
+</body>
+
+</html
